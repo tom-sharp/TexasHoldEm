@@ -40,7 +40,6 @@ namespace TexasHoldEm
 			this.panelLearn.Left = leftposition;
 			this.Width = leftposition + this.panelLearn.Width + 60;
 			this.Height = this.Cards[0].Height + 60;
-			this.Cards[0]. Click += TexasHoldEm_Click;
 
 			this.lblDbId.Text = $"Id: ???";
 			this.lblRankName.Text = $"";
@@ -48,11 +47,6 @@ namespace TexasHoldEm
 			this.lblDbWin.Text = $"Win ???";
 			this.lblDbRate.Text = $"Rate ??? %";
 			this.UpdateContent();
-		}
-
-		private void TexasHoldEm_Click(object sender, EventArgs e)
-		{
-			throw new NotImplementedException();
 		}
 
 		private void button1_Click(object sender, EventArgs e)
@@ -66,7 +60,7 @@ namespace TexasHoldEm
 		{
 			this.lblDbCount.Text = $"Entries in Db: {this.TexasAi.Count}";
 			this.lblPlayedCount.Text = $"Played rounds: {this.gameroundsplayed}";
-			this.lblPlayers.Text = $"Playes: {this.gameplayers}";
+			this.lblPlayers.Text = $"Players: {this.gameplayers}";
 		}
 
 		private void btnCheck_Click(object sender, EventArgs e)
