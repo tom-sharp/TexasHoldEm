@@ -8,7 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Syslib.Core" Version="1.0.5" />
-    <PackageReference Include="Syslib.Games" Version="1.0.0" />
+    <PackageReference Include="Syslib.Games" Version="1.0.1" />
   </ItemGroup>
 
 </Project>
