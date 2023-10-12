@@ -80,9 +80,10 @@ namespace TexasHoldEm
 			handcards.Add(playercards).Add(commoncards);
 			handcards.RankCards(this.TexasRank);
 
-			var id = this.TexasAi.AskId(this.gameplayers, playercards, commoncards);
-			var played = this.TexasAi.AskPlayed(this.gameplayers, playercards, commoncards);
-			var win = this.TexasAi.AskWin(this.gameplayers, playercards, commoncards);
+			var result = this.TexasAi.Ask(this.gameplayers, playercards, commoncards);
+			var id = result.Id;
+			var played = result.PCount;
+			var win = result.WCount;
 			var rate = this.TexasAi.AskRate(this.gameplayers, playercards, commoncards);
 
 
